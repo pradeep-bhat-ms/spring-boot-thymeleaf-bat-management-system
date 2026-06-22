@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Fetch By Id</title>
+</head>
+<body>
+
+<h1>Bat Details</h1>
+
+<table border="1">
+
+<tr>
+<th>ID</th>
+<th>Brand</th>
+<th>Owner</th>
+<th>Price</th>
+</tr>
+
+<tr>
+
+<td th:text="${batt.id}"></td>
+<td th:text="${batt.brand}"></td>
+<td th:text="${batt.owner}"></td>
+<td th:text="${batt.price}"></td>
+
+</tr>
+
+</table>
+
+</body>
+</html>

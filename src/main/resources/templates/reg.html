@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<form th:action="@{savebat}" th:object="${bat}" method="post">
+<p>
+Brand: <input type="text" id="brand" required="required" th:field="*{brand}">
+</p>
+<p>
+Owner: <input type="text" required="required" id="owner"  th:field="*{owner}">
+</p>
+<p>
+Price: <input type="text" id="price"  th:field="*{price}">
+</p>
+<button type="submit">  Save Data </button>
+
+</form>
+</body>
+</html>

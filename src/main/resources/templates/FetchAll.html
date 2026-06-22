@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Fetch All</title>
+</head>
+<body>
+
+<h1>All Bat Details</h1>
+
+<table border="1">
+
+<tr>
+<th>ID</th>
+<th>Brand</th>
+<th>Owner</th>
+<th>Price</th>
+</tr>
+
+<tr th:each="b : ${batList}">
+
+<td th:text="${b.id}"></td>
+<td th:text="${b.brand}"></td>
+<td th:text="${b.owner}"></td>
+<td th:text="${b.price}"></td>
+
+</tr>
+
+</table>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Update</title>
+</head>
+<body>
+
+<h1>Update Bat</h1>
+
+<form action="/update" method="post" th:object="${bat}">
+
+ID :<input type="text" th:field="*{id}" readonly>
+<br><br>
+
+Brand :<input type="text" th:field="*{brand}">
+<br><br>
+
+Owner :<input type="text" th:field="*{owner}">
+<br><br>
+
+Price :<input type="text" th:field="*{price}">
+<br><br>
+
+<button type="submit">Update</button>
+
+</form>
+
+</body>
+</html>
